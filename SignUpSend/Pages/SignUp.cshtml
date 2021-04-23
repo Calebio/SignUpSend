@@ -1,0 +1,38 @@
+﻿@page
+@model SignUpSend.Pages.SignUpModel
+@{
+    ViewData["Title"] = "SignUp";
+}
+
+<h1>SignUp</h1>
+<div>
+    <hr/>
+    <form method="post">
+        <table>
+            <tr>
+                <td>FirstName</td>
+                <td><input type="text" asp-for="sendmail.FirstName" placeholder="Enter name.. " /></td>
+            </tr>
+            <td>LastName</td>
+            <td><input type="text" asp-for="sendmail.LastName" placeholder="Enter name.. " /></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" asp-for="sendmail.Address" placeholder="Enter Address.. " /></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text" asp-for="sendmail.Phone" placeholder="Enter phone number.. " /></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td><input type="text" asp-for="sendmail.Email" placeholder="Enter email address.. " /></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn-success" value="Send Mail.." /></td>
+                <td>@ViewData["Message"]</td>
+            </tr>
+        </table>
+    </form>
+</div>
+
